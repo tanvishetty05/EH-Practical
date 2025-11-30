@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bachat Khata – Home (Demo)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-logo">BK</div>
+                <div>
+                    <div class="brand-name">Bachat Khata</div>
+                    <div class="brand-tagline">Your demo savings dashboard</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-outline" data-logout>Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-inner">
+                <h1 class="hero-title">Welcome to your <span>Bachat Khata</span> demo dashboard</h1>
+                <p class="hero-subtitle">
+                    You’re now inside the main banking interface (demo). Use the navigation above to move between
+                    Home, About Us and Contact Us. Logout will bring you back to the landing page.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h2 class="card-title">Demo Savings Account</h2>
+                        <p class="card-text">
+                            Account Number: 0000 1234 5678 (Demo only) <br>
+                            Current Balance: <strong>₹ 45,230.00</strong> <br>
+                            Account Type: Digital Savings · Interest (simulated): 3.50% p.a.
+                        </p>
+                        <div style="margin-top: 0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+                            <button class="btn btn-primary">View Statement (Demo)</button>
+                            <button class="btn btn-outline">Download PDF (Demo)</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2 class="card-title">Quick Actions</h2>
+                        <p class="card-text">
+                            These buttons show how money transfer / bill payment actions could be placed.
+                            In this demo, they are only UI elements with hover animations.
+                        </p>
+                        <div style="margin-top: 0.75rem; display:flex; flex-wrap:wrap; gap:0.5rem;">
+                            <button class="btn btn-primary">Send Money (Demo)</button>
+                            <button class="btn btn-outline">Add Beneficiary (Demo)</button>
+                            <button class="btn btn-outline">Pay Bills (Demo)</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h2 class="card-title">Security Reminder</h2>
+                        <p class="card-text">
+                            Never share real banking credentials on demo websites. Bachat Khata is only a sample
+                            interface, not a registered bank or payment service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div>© <span id="year"></span> Bachat Khata (Demo)</div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bachat Khata – Smart Demo Banking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-logo">BK</div>
+                <div>
+                    <div class="brand-name">Bachat Khata</div>
+                    <div class="brand-tagline">Smart savings. Simple banking.</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <!-- On landing, we don't show main site nav, only demo links if you want -->
+                
+                <button class="btn btn-primary" data-open-login>
+                    Login / Sign Up
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="section">
+            <div class="section-inner hero">
+                <div>
+                    <div class="hero-badge">
+                        • Secure Demo
+                        <span>Try online banking safely</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Experience a clean, modern <span>online banking</span> demo with Bachat Khata.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Bachat Khata is a <strong>demo online banking website</strong> built for learning and
+                        portfolio use. Explore how a real banking UI might look – without using any real money
+                        or real account data.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" data-open-login>
+                            Login to Demo
+                        </button>
+                        <button class="btn btn-outline" data-open-login>
+                            Create Demo Account
+                        </button>
+                    </div>
+
+                    <p class="hero-note">
+                        <strong>Important:</strong> This is NOT a real bank. Please do not enter any real card
+                        numbers, OTPs, Aadhaar, PAN or passwords.
+                    </p>
+
+                    <div class="demo-banner">
+                        This website is a <strong>demo project</strong> and not an actual financial institution.
+                        All balances, transactions and users are fictional for UI demonstration only.
+                    </div>
+                </div>
+
+                <!-- Right side card -->
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <div class="hero-card-title">Sample Savings Snapshot</div>
+                        <span class="hero-card-chip">Demo Preview</span>
+                    </div>
+                    <div class="hero-card-balance">
+                        Simulated balance
+                        <div class="hero-card-amount">₹ 45,230.00</div>
+                    </div>
+                    <div class="hero-stat-grid">
+                        <div class="hero-stat">
+                            <span>Monthly Saving Goal</span>
+                            <strong>₹ 5,000</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span>Auto-Debit Setup</span>
+                            <strong>Active (Demo)</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span>Recent Activity</span>
+                            <strong>+ ₹ 1,500 (Credit)</strong>
+                        </div>
+                        <div class="hero-stat">
+                            <span>Virtual Card</span>
+                            <strong>Masked · 1234</strong>
+                        </div>
+                    </div>
+                    <p class="modal-note" style="margin-top: 0.9rem;">
+                        All values shown here are auto-generated and do not represent real financial data.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div>© <span id="year"></span> Bachat Khata (Demo). No real banking services are provided.</div>
+            <div class="footer-links">
+                <a href="#">Demo Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Login / Sign Up Modal (only on Landing) -->
+<div class="modal-backdrop" id="auth-modal-backdrop">
+    <div class="modal">
+        <div class="modal-header">
+            <div class="modal-title" id="auth-form-title">Log in to Bachat Khata</div>
+            <button class="modal-close" id="auth-modal-close" aria-label="Close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-mode="login">Login</button>
+                <button class="modal-tab" data-mode="signup">Sign Up</button>
+            </div>
+
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="email">Email (Demo)</label>
+                    <input type="email" id="email" placeholder="demo@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (Demo)</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="auth-submit">
+                    Login (Demo)
+                </button>
+                <p class="modal-note" id="demo-note">
+                    <strong>Important:</strong> This is a dummy login. Any email & password will let you into
+                    the main demo website.
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

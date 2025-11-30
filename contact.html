@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bachat Khata – Contact Us (Demo)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-logo">BK</div>
+                <div>
+                    <div class="brand-name">Bachat Khata</div>
+                    <div class="brand-tagline">Demo support & feedback</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-outline" data-logout>Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-inner">
+                <h1 class="hero-title">Contact <span>Bachat Khata</span> (Demo)</h1>
+                <p class="hero-subtitle">
+                    Use this page as an example of how a bank might collect feedback or support requests.
+                    In this demo, the form does not actually send any data.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h2 class="card-title">Send us a message</h2>
+                        <form onsubmit="alert('Demo only: form not actually submitted.'); return false;">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input id="name" type="text" placeholder="Your name (Demo)">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email (Demo)</label>
+                                <input id="email" type="email" placeholder="demo@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Share your feedback about this demo UI..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Submit (Demo)
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h2 class="card-title">Demo contact details</h2>
+                        <p class="card-text">
+                            Email: support@bachatkhata-demo.local (example only) <br>
+                            Helpline: +91-00000-00000 (not a real number)
+                            <br><br>
+                            Always use official channels of your real bank for any sensitive account-related
+                            queries. This page is only for demonstration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div>© <span id="year"></span> Bachat Khata (Demo)</div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
